@@ -3,12 +3,12 @@
   to predict the sentiments of the text snippets in the test set.  The test set provided has numeric ids and text snippets, which is used for predicting the outcome. The output
   will be having id and the prediction whether the sentiment is "Positive" or "Negative.
   
-## Participants
+### Participants
    Baburaj Velayudhan
    bvelayudhan@vmware.com
    CMBU
    
-## Summary   
+### Summary   
    The input text data is cleaned to remove any @mentions, URLs, hashtags, punctuations, html etc and a train and test split is created for validating the trained model.
    In an attempt to know the most common words used in Negative and Positive sentiments, a wordcloud representation is created and a plot is creatd with  most commonly 
    used words in Positive and Negative sentiments.  Top 10 words that are most frequently used in both are added to a custom stop word list
@@ -23,16 +23,16 @@
    LinearRegression with CountVectorizer and TfidfVectorizer:
    The same process is repeated with LinearRegression model and it shows that the tri-gram accuracy remains at 75%.
    
-## Feature Selection
-How did you select features for your analysis? Describe any feature transformations or feature engineering you performed prior to your analysis.
+### Feature Selection
+   For feature selection, I have used chi2 method.
+   
+   
+### Training methodology
+   <Describe the training method(s) you used, including any ensemble approaches, if applicable.>
 
-## Training methodology
-Describe the training method(s) you used, including any ensemble approaches, if applicable.
+### Notable aspects
 
-## Notable aspects
-Describe any tricks or interesting aspects of your solution that you think may have improved your model accuracy.
-
-## References
+### References
    The data cleaning and model training approach is highly infiuenced by the Ricky Kim's article published in 
    https://towardsdatascience.com/another-twitter-sentiment-analysis-bb5b01ebad90
    
